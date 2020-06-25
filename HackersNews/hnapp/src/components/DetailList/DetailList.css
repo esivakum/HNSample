@@ -1,0 +1,21 @@
+.HeaderDetails {
+    background-color:#ff4000;
+}
+
+h4,h5,h5{
+    color: white;
+    margin: 20px;
+}
+
+.textColor {
+    color: black;
+}
+.list-style {
+    list-style: none;
+
+}
+.ListItme {
+    text-align: left;
+    margin: 30px;
+    background-color: gainsboro;
+  }

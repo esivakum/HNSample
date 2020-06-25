@@ -1,0 +1,19 @@
+.HeaderTest {
+    /* text-align: center; */
+    background-color:white;
+}
+.HeaderTitle {
+    height: 50px;
+    background-color:#ff4000;
+}
+.TitleCSS {
+    color: white;
+    text-align: center;
+    justify-content: center;    
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btn-align{
+    align-items: center;
+}

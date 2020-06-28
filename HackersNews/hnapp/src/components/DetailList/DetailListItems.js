@@ -13,27 +13,24 @@ class DetailListItems extends Component {
 
       }
     componentDidMount() {
-        const story = this.props.story;
-        const arrKids = story.kids
-        arrKids.map(id => {
-            hackersNewsApi.getStory(id)
-            .then(story=>{
-              this.setState(prevState => {
+      console.log(this.props.story.objectID);
+        hackersNewsApi.getItems(this.props.story.objectID).then(data=> {
+          // console.log("data",data.children);
+                this.setState(prevState => {
                return {
                  ...prevState,
-                 arrComments: [...prevState.arrComments, story]}
+                 arrComments: data.children }
               })
-            })
-            .catch(err=>console.log(`err ${err}`));
-          });
+        }).catch(err=>console.log("err",err))
+
     }
 
 
     render() {
 
         const arrComments = this.state.arrComments;
-        
-        console.log(`arrComments: ${arrComments}`);
+        // console.log(`arrComments: ${arrComments}`);
+        // return (<></>);
         return (
             <div>
             <div>
@@ -42,8 +39,8 @@ class DetailListItems extends Component {
                         {arrComments.map((comment,index)=> {
                           return(  <li key={index}>
                                 <div className="ListItme">
-                                    <h3 >{comment.by}</h3>
-                                    <h5 className="textColor">{comment.time}</h5>
+                                    <h3 >{comment.author}</h3>
+                                    <h5 className="textColor">{comment.created_at}</h5>
                                     <p>{comment.text}</p>
                                 </div>
                             </li>

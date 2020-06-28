@@ -3,7 +3,7 @@
     background-color:white;
 }
 .HeaderTitle {
-    height: 50px;
+    height: 100px;
     background-color:#ff4000;
 }
 .TitleCSS {
@@ -15,5 +15,11 @@
 }
 
 .btn-align{
-    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
 }
+.header_footer_style {
+    width: 100%;
+    height: 45px;
+    background-color: gray;
+  }

@@ -2,6 +2,7 @@
     text-align: left;
     margin: 30px;
     background-color: gainsboro;
+    padding: 10px
   }
   .List-UL {
       list-style: none;
@@ -9,3 +10,17 @@
   .link-Item{
       text-decoration: none;
   }
+  .list-btn {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding-right: 30px;
+    }
+    .item-btn {
+        margin: 10px;
+    }
+    .Title {
+        color: black;
+        font-weight: bold;
+
+    }

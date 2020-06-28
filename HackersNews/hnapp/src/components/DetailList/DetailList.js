@@ -10,7 +10,7 @@ class DetailList extends Component {
                 <div className="HeaderDetails">
                     <h4>{story.title}</h4>
                     <h5>{story.url}</h5>
-                    <h5>{story.by}</h5>
+                    <h5>{story.author}</h5>
              </div>
              </div>
              <DetailListItems story={story}></DetailListItems>
